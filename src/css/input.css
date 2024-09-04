@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Matemasie-Regular;
+        src: url("./../font/Matemasie-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: Macondo-Regular;
+        src: url("./../font/Macondo-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: ConcertOne-Regular;
+        src: url("./../font/ConcertOne-Regular.ttf");
+    }
+}
+
+@layer components {
+    .nav-btn {
+        @apply px-6 py-3 rounded-lg transition-colors;
+    }
+
+    .custom_shadow {
+        filter: drop-shadow(8px 25px 10px rgb(0 0 0 / 0.25));
+        -webkit-filter: drop-shadow(8px 25px 10px rgb(0 0 0 / 0.25));
+    }
+
+    .post_btn {
+        @apply py-1 px-2 text-xs bg-sky-200 text-sky-700 rounded-[4px] capitalize hover:bg-white transition-colors;
+    }
+
+    .input-box:not(.input-box:has(textarea)) {
+        @apply flex gap-2 text-sky-500 items-center rounded-full bg-white px-3;
+    }
+
+    .input-box {
+        @apply shadow-inner;
+    }
+
+    .input-box>input {
+        @apply w-full py-2 outline-none bg-transparent border-none;
+    }
+
+    .contact-btn {
+        @apply w-16 aspect-[1/1] grid place-content-center bg-gradient-to-br from-sky-600 to-sky-200 rounded-full text-white drop-shadow-sm text-lg capitalize shadow-md;
+    }
+
+    .active {
+        @apply bg-sky-700 text-white;
+    }
+}

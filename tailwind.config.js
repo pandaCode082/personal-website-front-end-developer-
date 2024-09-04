@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{htm,html,js}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        MacondoRegular: "Macondo-Regular",
+        MatemasieRegular: "Matemasie-Regular",
+        ConcertOneRegular: "ConcertOne-Regular",
+      },
       container: {
-        center: true,
+        center: true
       }
     },
   },
   plugins: [],
 }
-
