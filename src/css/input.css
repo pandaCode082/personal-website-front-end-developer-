@@ -52,4 +52,8 @@
     .active {
         @apply bg-sky-700 text-white;
     }
+
+    .bordshadow {
+        box-shadow: inset 2px 3px 10px #0003, inset -2px -3px 10px #fff2, 5px 5px 10px 4px #0002, -5px -5px 15px rgba(150, 147, 147, 0.2);
+    }
 }
