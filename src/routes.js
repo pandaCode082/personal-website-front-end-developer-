@@ -1,14 +1,16 @@
-import Home from './component/pages/Home';
-import About from './component/pages/About/About';
-import Contact from './component/pages/Contact';
-import Shop from './component/pages/Shop';
-import Cart from './component/pages/Cart';
-import Login from './component/pages/Login';
-import SignUp from './component/pages/SignUp';
-import PostPage from './component/pages/PostPage';
-import NotFound from './component/pages/NotFound';
-import Resume from './component/pages/About/Resume/Resume';
-import Information from './component/pages/About/Information';
+import Home from './components/pages/Home';
+import About from './components/pages/About/About';
+import Contact from './components/pages/Contact';
+import Shop from './components/pages/Shop';
+import Cart from './components/pages/Cart';
+import Login from './components/pages/Login';
+import SignUp from './components/pages/SignUp';
+import PostPage from './components/pages/PostPage';
+import NotFound from './components/pages/NotFound';
+import Resume from './components/pages/About/Resume/Resume';
+import Information from './components/pages/About/Information';
+import Panel from './components/pages/Panel';
+import PravetRoute from './components/pages/PravetRoute';
 
 const routes = [
     { path: '/', element: < Home /> },
@@ -17,6 +19,8 @@ const routes = [
         path: '/about/*',
         element: < About />,
         children: [
+            { index: true, element: <Information /> },
+            
             { path: 'information', element: < Information /> },
             { path: 'resume', element: < Resume /> },
         ]
@@ -24,11 +28,16 @@ const routes = [
 
     { path: '/contact', element: < Contact /> },
     { path: '/cart', element: < Cart /> },
-    { path: '/shop', element: < Shop /> },
+    { path: '/Courses', element: < Shop /> },
     { path: '/Login', element: < Login /> },
     { path: '/signUp', element: < SignUp /> },
-    { path: '/shop/post/:postID', element: < PostPage /> },
-    { path: '*', element: < NotFound /> },
+    {
+        path: '*', children: [
+            { path: '*', element: < NotFound /> },
+            { path: "*", element: <PravetRoute />, children: [{ path: "panel", element: <Panel /> }] },
+        ]
+    },
+    { path: '/Courses/post/:postID', element: < PostPage /> },
 ]
 
 export default routes;

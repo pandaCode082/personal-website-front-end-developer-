@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from '../navigation-bar/Nav';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import CallIcon from '@mui/icons-material/Call';
@@ -11,12 +10,10 @@ import { FaDiscord } from "react-icons/fa6";
 export default function Contact() {
     return (
         <>
-            <Nav pagePath={"/contact"} />
-
             <div className='container h-[80vh] flex gap-24 justify-center items-center'>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14087.510659442678!2d57.98418196675618!3d28.028214657129723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3efae9c5524c167d%3A0x3f3db8dc85f65ee4!2sRudbar%2C%20Kerman%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1725193010680!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no - referrer - when - downgrade" title='roodbar'
-                    className='border-sky-600 border rounded-xl w-[450px] aspect-[1/0.8] shadow-xl outline-none'
+                    className='border-sky-600 border bg-sky-600/50 rounded-xl w-[450px] aspect-[1/0.8] shadow-xl outline-none backdrop-blur-sm'
                 ></iframe>
                 <div className='flex gap-9'>
 

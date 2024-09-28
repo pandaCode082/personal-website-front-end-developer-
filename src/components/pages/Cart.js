@@ -1,10 +1,8 @@
 import React from 'react';
-import Nav from '../navigation-bar/Nav';
 export default function Cart() {
     return (
         <>
-            <Nav pagePath={"/cart"} />
-
+            <h1 className='text-6xl text-center'>cart</h1>
         </>
     )
 }
