@@ -43,7 +43,7 @@ export default function Contact() {
                         <a className='contact-btn' href='mailto:mahdiroohandeh@gmail.com'><EmailIcon fontSize='large' /></a>
                     </Tooltip>
                     <Tooltip className='capitalize' title="telegram" placement="top">
-                        <a className='contact-btn' href="tg://resolve?domain=PANDA_Code_00"><TelegramIcon fontSize='large' /></a>
+                        <a className='contact-btn' href="tg://resolve?domain=panda_0020"><TelegramIcon fontSize='large' /></a>
                     </Tooltip>
                     <Tooltip className='capitalize' title="discord" placement="top">
                         <a className='contact-btn' target='blank' href='https://discord.com/invite/tqgBXq4C'><FaDiscord size={"40"} /></a>

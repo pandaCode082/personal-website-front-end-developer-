@@ -67,8 +67,8 @@ export default function Login() {
                         <input type="password" id='confrim-password' placeholder='confrim your password' required />
                     </label>
                     <label htmlFor="rules" className='text-left text-xs font-MacondoRegular block'>
-                        Do you accept the rules and regulations?
                         <input type="checkbox" name="rules" id="rules" className='mx-1' required />
+                        <span>Do you accept the rules and regulations?</span>
                     </label>
                     <input type="submit" value="submit" className='submit-btn' />
                 </form>

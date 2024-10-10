@@ -20,7 +20,6 @@ const routes = [
         element: < About />,
         children: [
             { index: true, element: <Information /> },
-            
             { path: 'information', element: < Information /> },
             { path: 'resume', element: < Resume /> },
         ]
