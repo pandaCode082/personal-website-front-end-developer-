@@ -674,7 +674,10 @@ video {
 }
 
 .bordshadow {
-  box-shadow: inset 2px 3px 10px #0003, inset -2px -3px 10px #fff2, 5px 5px 10px 4px #0002, -5px -5px 15px rgba(150, 147, 147, 0.2);
+  box-shadow: inset 2px 3px 10px #0003,
+            inset -2px -3px 10px #fff2,
+            5px 5px 10px 4px #0002,
+            -5px -5px 15px #96939333;
 }
 
 @keyframes bgElem {
@@ -809,6 +812,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .line-clamp-1 {
@@ -996,6 +1003,16 @@ video {
 
 .-translate-y-1 {
   --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-full {
+  --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-full {
+  --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

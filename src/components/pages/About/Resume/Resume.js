@@ -21,7 +21,7 @@ export default function Resume() {
 
 
             </div>
-            <article>
+            <article className='mt-12'>
                 <h2 className='text-4xl capitalize font-medium w-full mb-5'>My work history</h2>
                 <p className='font-ConcertOneRegular text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta at eligendi vel corrupti eaque facere nobis ea ipsum nihil voluptatem, facilis eius aliquid numquam, alias molestiae eveniet atque aspernatur minima beatae inventore perferendis voluptatibus labore. Suscipit aliquam asperiores labore possimus.</p>
             </article>
