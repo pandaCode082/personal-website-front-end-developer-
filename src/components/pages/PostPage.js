@@ -16,7 +16,7 @@ export default function PostPage() {
             }))
             .catch(err => {
                 console.log(err);
-                navigate("/");
+                navigate("404");
             })
     }, [postID])
 
