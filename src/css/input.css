@@ -18,6 +18,10 @@
         src: url("./../font/ConcertOne-Regular.ttf");
     }
 
+    body {
+        @apply overflow-x-hidden
+    }
+
 }
 
 @layer components {
@@ -98,5 +102,21 @@
 
     .submit-btn {
         @apply w-9/12 h-max py-1 bg-transparent text-sky-700 border border-sky-700 hover:border-transparent hover:text-white hover:bg-sky-700 transition-colors cursor-pointer rounded-full capitalize;
+    }
+
+    footer a:not(a:has(img)) {
+        @apply text-center py-1 px-3 rounded-md;
+    }
+
+    footer a:not(a:has(img)):not(a.active) {
+        @apply relative before:footerHover hover:before:w-full;
+    }
+
+    .footerHover {
+        @apply w-0 h-[1px] absolute bg-white bottom-0 left-0 transition-all duration-300;
+    }
+
+    footer a.active {
+        @apply bg-black/10 border;
     }
 }
