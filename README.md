@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Use Effect method in React js
+Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et `gorilla` congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio **` incongruous `** feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non `sequitur` condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. `Marquee` selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad `nauseum.` Souvlaki ignitus carborundum e pluribus unum.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```javascript
+useEffect(() => {
+        fetch(`https://freetestapi.com/api/v1/books/${postID}`, { method: "GET" })
+            .then(resp => resp.json().then(data => {
+                console.log(data);
+                setContent(data);
+            }))
+            .catch(err => {
+                console.log(err);
+                navigate("404");
+            })
+    }, [postID])
+```
+---
+##  Frontend Framworks
 
-## Available Scripts
+- ### javascript
+    - [React](https://legacy.reactjs.org/docs/getting-started.html)
+    - [Vue](https://vuejs.org/)
+    - [Angular](https://angular.dev/)
 
-In the project directory, you can run:
+- ### css
+    - [tailwindcss](https://tailwindcss.com/)
+    - [bootstrap](https://getbootstrap.com/)
+    - [sass](https://sass-lang.com/)
 
-### `npm start`
+![m'lady](https://i.imgur.com/v8IVDka.jpg)
+ 
+> To be or not to be, that is the question.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**The quick brown [fox][1], jumped over the lazy [dog][2].**
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[sabzlearn][3]
+ 
+[1]: https://en.wikipedia.org/wiki/Fox "Wikipedia: Fox"
+[2]: https://en.wikipedia.org/wiki/Dog "Wikipedia: Dog"
+[3]: https://google.com/ "google.com"

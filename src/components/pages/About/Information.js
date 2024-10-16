@@ -17,7 +17,7 @@ export default function Information() {
                     <img src="/images/HeaderPanda.png" alt="me" className='drop-shadow-xl shadow-black' />
                 </div>
             </div>
-            <div className='w-full h-72 bg-green-950/30 backdrop-blur-lg rounded-2xl p-3'>
+            <div className='w-full h-72 bg-sky-900/30 backdrop-blur-lg rounded-2xl p-3'>
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
