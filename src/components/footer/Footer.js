@@ -28,7 +28,7 @@ export default function Footer() {
                             <NavLink to={"/"}>home</NavLink>
                             <NavLink to={"/courses"}>courses</NavLink>
                             <NavLink to={"/contact"}>contact</NavLink>
-                            <NavLink to={"/about"}>about</NavLink>
+                            <NavLink to={"/about/"}>about</NavLink>
                             <NavLink to={"/login"}>login</NavLink>
                         </div>
                     </div>
