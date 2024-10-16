@@ -9,7 +9,7 @@ export default function App() {
     return (
         <>
             <Nav />
-            {/* <LiveBg /> */}
+            <LiveBg />
             {router}
         </>
     )
