@@ -11,7 +11,7 @@ export default function About() {
         if (location.pathname === "/about/") {
             navigate("information");
         }
-    }, [navigate,location])
+    }, [navigate, location])
 
     return (
         <div>
