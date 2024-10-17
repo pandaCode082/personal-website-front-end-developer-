@@ -9,7 +9,8 @@ export default function Resume() {
 
                     <div className='w-7/12 flex flex-col gap-8'>
                         <h1 className='text-6xl capitalize font-bold w-full '>my skills</h1>
-                        <div className='relative z-50 w-full h-max rounded-3xl bg-emerald-900 text-white border-[8px] border-neutral-400 bordshadow flex gap-x-10 gap-y-7 flex-wrap justify-center py-10'>
+
+                        <div className='relative z-20 w-full h-max rounded-3xl bg-emerald-900 text-white border-[8px] border-neutral-400 bordshadow flex gap-x-10 gap-y-7 flex-wrap justify-center py-10'>
                             {skils.map(skil => <Skil key={skil.id} {...skil} />)}
                         </div>
                     </div>
