@@ -119,4 +119,12 @@
     footer a.active {
         @apply bg-black/10 border;
     }
+
+    .footer-list {
+        @apply md:w-max w-full [&>span]:opacity-70 sm:[&>span]:text-lg text-sm space-y-2;
+    }
+
+    .footer-list>h5 {
+        @apply font-medium sm:text-2xl text-lg;
+    }
 }
