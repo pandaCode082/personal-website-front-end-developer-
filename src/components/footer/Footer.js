@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className='relative bg-sky-600 text-white mt-[670px] drop-shadow-[8px_-14px_6px_#0003]'>
+        <footer className='relative bg-sky-600 lg:pt-0 pt-32 pb-7 text-white mt-[670px] drop-shadow-[8px_-14px_6px_#0003]'>
             {/* ------------------> footer head <------------------ */}
-            <svg viewBox="0.976 161.014 503.253 148.046" className='absolute left-0 top-0 -translate-y-full stroke-sky-700 fill-sky-600 w-[100.5%]'>
+            <svg viewBox="0.976 161.014 503.253 148.046" className='absolute left-0 top-0 -translate-y-full stroke-sky-700 fill-sky-600 w-[100.5%] lg:block hidden'>
                 <path style={{
                     strokeLinecap: "round",
                 }}
@@ -13,18 +13,19 @@ export default function Footer() {
             </svg >
 
             <a title='GitHub:pandaCode082' href='https://github.com/pandaCode082' target='
-            _blank' className='w-96 aspect-[1/1] rounded-full bg-sky-600 border-sky-700 border-4 absolute top-[-570px] left-96 grid place-content-center overflow-hidden'>
+            _blank' className='xl:w-96 sm:w-60 w-40 aspect-[1/1] rounded-full bg-sky-600 lg:border-sky-700 border-white border-4 lg:absolute mx-auto lg:m-0 2xl:top-[-570px] xl:top-[-500px] -top-96 2xl:left-96 left-80 grid place-content-center overflow-hidden'>
                 <img src="https://avatars.githubusercontent.com/u/170001683?v=4" alt="git-profile" className='object-cover' />
             </a>
             {/* ------------------> footer body <------------------ */}
-            <div className='container -translate-y-24'>
+            <div className='container lg:text-left text-center lg:-translate-y-24 lg:mt-0 mt-10'>
 
-                <div className='flex justify-between'>
+                <div className='flex lg:justify-between items-center flex-col lg:flex-row gap-20 lg:gap-0 '>
                     {/* left side */}
-                    <div className='w-max text-lg font-medium space-y-10'>
-                        <h2 className='text-6xl font-bold capitalize drop-shadow-xl shadow-black/70'>mahdi roohandeh</h2>
+                    <div className='w-max text-lg font-medium lg:space-y-10 space-y-14'>
+
+                        <h2 className='lg:text-6xl sm:text-5xl text-2xl font-bold capitalize drop-shadow-xl shadow-black/70'>mahdi roohandeh</h2>
                         {/* footer list */}
-                        <div className='w-max capitalize flex gap-5 mx-auto'>
+                        <div className='sm:w-max w-9/12 justify-center capitalize flex flex-wrap sm:gap-5 gap-2 mx-auto sm:text-base text-sm'>
                             <NavLink to={"/"}>home</NavLink>
                             <NavLink to={"/courses"}>courses</NavLink>
                             <NavLink to={"/contact"}>contact</NavLink>
@@ -33,17 +34,17 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className='[&>div]:flex [&>div]:flex-col text-center flex gap-16'>
-                        <div className='w-max [&>span]:opacity-70 [&>span]:text-lg'>
-                            <h5 className='font-medium text-2xl'>Social media</h5>
+                    <div className='[&>div]:flex [&>div]:flex-col text-center flex gap-16 flex-wrap'>
+                        <div className='footer-list'>
+                            <h5>Social media</h5>
                             <span>telegram</span>
                             <span>instagram</span>
                             <span>linkedin</span>
                             <span>github</span>
                         </div>
 
-                        <div className='w-max [&>span]:opacity-70 [&>span]:text-lg'>
-                            <h5 className='font-medium text-2xl'>Popular blogs</h5>
+                        <div className='footer-list'>
+                            <h5>Popular blogs</h5>
                             <span>What is html?</span>
                             <span>Who is a web developer?</span>
                             <span>Front-end learning path</span>
@@ -53,9 +54,9 @@ export default function Footer() {
                     </div>
 
                 </div>
-                <div className='w-max flex gap-10 mx-auto mt-24 [&>svg]:w-20 [&>svg]:fill-white/50'>
+                <div className='w-9/12 flex justify-center flex-wrap gap-10 mx-auto mt-24 sm:http://localhost:3000/about/information:w-20 [&>svg]:w-14 [&>svg]:fill-white/50'>
 
-                    <svg viewBox="0 0 384 512">
+                    <svg className='md:order-none order-2' viewBox="0 0 384 512">
                         <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
                     </svg>
 
@@ -71,7 +72,7 @@ export default function Footer() {
                         <path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
                     </svg>
 
-                    <svg viewBox="0 0 384 512">
+                    <svg className='order-5' viewBox="0 0 384 512">
                         <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
                     </svg>
 
