@@ -2,10 +2,11 @@ import React from 'react'
 
 export default function Skil(props) {
     return (
-        <div className='w-5/12 h-max flex flex-col gap-2 '>
-            <div className='flex justify-between'>
-                <h5 className='text-lg font-MacondoRegular capitalize font-bold'>{props.title}</h5>
-                <span className='text-xs font-MacondoRegular'>
+        <div className='md:w-5/12 min-w-3/12 w-max max-w-[80%] h-max flex flex-col md:gap-2 gap-1 '>
+            <div className='flex justify-between space-x-6 items-center px-1'>
+                <h5 className='md:text-lg text-base md:font-bold font-light
+                 font-MacondoRegular capitalize'>{props.title}</h5>
+                <span className='text-xs font-MacondoRegular text-white/80'>
                     {props.level}
                 </span>
             </div>
