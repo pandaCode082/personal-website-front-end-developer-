@@ -100,6 +100,10 @@
         @apply py-3 px-0 pl-3 w-full h-max rounded-full outline-none shadow-inner shadow-black/10;
     }
 
+    .user-input-box {
+        @apply placeholder:text-xs lg:placeholder:text-base
+    }
+
     .submit-btn {
         @apply w-9/12 h-max py-1 bg-transparent text-sky-700 border border-sky-700 hover:border-transparent hover:text-white hover:bg-sky-700 transition-colors cursor-pointer rounded-full capitalize;
     }

@@ -24,9 +24,9 @@ export default function Login() {
             </div>
 
 
-            <div className='relative 2xl:w-[850px] xl:w-[700px] aspect-[1/0.6] border border-solid border-sky-600 shadow-xl shadow-sky-800/50 text-sky-700 bg-gray-300/30 backdrop-blur-sm flex rounded-2xl [&>div.sign-up]:right-0 [&>div.login]:left-0'>
+            <div className='relative 2xl:w-[850px] xl:w-[700px] w-[82%] md:aspect-[1/0.6] h-max border border-solid border-sky-600 shadow-xl shadow-sky-800/50 text-sky-700 bg-gray-300/30 backdrop-blur-sm flex rounded-2xl [&>div.sign-up]:right-0 [&>div.login]:left-0'>
 
-                <div className={`absolute top-0 transition duration-500 w-1/2 h-full bg-sky-600 rounded-2xl pt-10 pb-5 flex flex-col justify-between ${showForm}`}>
+                <div className={`absolute py-10 top-0 transition duration-500 w-1/2 h-full bg-sky-600 rounded-2xl pt-10 pb-5 md:flex hidden flex-col justify-between ${showForm}`}>
                     <div className='space-y-10'>
                         {
                             showForm === "login" ?
@@ -52,7 +52,10 @@ export default function Login() {
                 </div>
                 {/* ------------- form ------------- */}
                 {/* ------------- sign up ------------- */}
-                <form className='flex flex-col w-full h-full p-5 gap-4 justify-center items-center [&>label]:user-input-box'>
+                <form className={`md:flex flex-col w-full h-full p-5 md:gap-4 gap-5 justify-center items-center [&>label]:user-input-box ${showForm === "login" ? "hidden" : "flex"}`}>
+
+                    <h2 className='block md:hidden text-5xl capitalize font-ConcertOneRegular font-bold my-5'>sign up</h2>
+
                     <label htmlFor="userName">
                         <input type="text" id='userName' placeholder='enter username' required />
                     </label>
@@ -73,7 +76,9 @@ export default function Login() {
                     <input type="submit" value="submit" className='submit-btn' />
                 </form>
                 {/* ------------- login ------------- */}
-                <form className='flex flex-col w-full h-full p-5 gap-7 justify-center items-center login-form [&>label]:user-input-box'>
+                <form className={`md:flex flex-col w-full h-full md:p-5 pt-6 pb-10 gap-7 justify-center items-center login-form [&>label]:user-input-box ${showForm === "login" ? "flex" : "hidden"}`}>
+                    <h2 className='block md:hidden text-5xl capitalize font-ConcertOneRegular font-bold'>login</h2>
+
                     <label htmlFor="userName-email">
                         <input type="text" id='userName-email' placeholder='enter your (username/email)' required />
                     </label>
