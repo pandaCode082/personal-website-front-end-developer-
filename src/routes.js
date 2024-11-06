@@ -1,7 +1,7 @@
 import Home from './components/pages/Home';
 import About from './components/pages/About/About';
 import Contact from './components/pages/Contact';
-import Shop from './components/pages/Shop';
+import Blogs from './components/pages/Blogs';
 import Cart from './components/pages/Cart';
 import Login from './components/pages/Login';
 import SignUp from './components/pages/SignUp';
@@ -27,7 +27,7 @@ const routes = [
 
     { path: '/contact', element: < Contact /> },
     { path: '/cart', element: < Cart /> },
-    { path: '/Courses', element: < Shop /> },
+    { path: '/Blogs', element: < Blogs /> },
     { path: '/Login', element: < Login /> },
     { path: '/signUp', element: < SignUp /> },
     {

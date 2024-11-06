@@ -35,7 +35,7 @@ export default function Nav() {
                 <NavLink className={activeLinkHandler} to={"/about/"} > about</NavLink>
                 <NavLink className={activeLinkHandler} to={"/contact"} > contact</NavLink>
                 <NavLink className={activeLinkHandler} to={"/"} > home</NavLink>
-                <NavLink className={activeLinkHandler} to={"/Courses"} > Courses</NavLink>
+                <NavLink className={activeLinkHandler} to={"/Blogs"} > Blogs</NavLink>
                 <NavLink className={activeLinkHandler} to={"/cart"} > cart</NavLink>
             </div>
 
@@ -64,7 +64,7 @@ export default function Nav() {
                     <div className='flex flex-col gap-4 text-xl text-center capitalize font-medium pt-40 w-max mx-auto [&>a]:p-2 [&>a]:rounded-lg'>
                         <NavLink onClick={menuToggelHandler} to={"/"} > home</NavLink>
                         <NavLink onClick={menuToggelHandler} to={"/about/"} > about</NavLink>
-                        <NavLink onClick={menuToggelHandler} to={"/Courses"} > Courses</NavLink>
+                        <NavLink onClick={menuToggelHandler} to={"/Blogs"} > Blogs</NavLink>
                         <NavLink onClick={menuToggelHandler} to={"/contact"} > contact</NavLink>
                         <NavLink onClick={menuToggelHandler} to={"/cart"} > cart</NavLink>
                     </div>
