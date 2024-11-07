@@ -954,10 +954,6 @@ footer a.active {
   margin-top: 9rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1009,10 +1005,6 @@ footer a.active {
 
 .hidden {
   display: none;
-}
-
-.aspect-\[1\/0\.6\] {
-  aspect-ratio: 1/0.6;
 }
 
 .aspect-\[1\/0\.7\] {
@@ -1076,6 +1068,10 @@ footer a.active {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1132,6 +1128,10 @@ footer a.active {
   width: 60%;
 }
 
+.w-\[82\%\] {
+  width: 82%;
+}
+
 .w-\[88\%\] {
   width: 88%;
 }
@@ -1154,14 +1154,6 @@ footer a.active {
   width: min-content;
 }
 
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[82\%\] {
-  width: 82%;
-}
-
 .max-w-\[500px\] {
   max-width: 500px;
 }
@@ -1177,26 +1169,6 @@ footer a.active {
 
 .max-w-none {
   max-width: none;
-}
-
-.max-w-9 {
-  max-width: 2.25rem;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[80\] {
-  max-width: 80;
-}
-
-.max-w-\[90\%\] {
-  max-width: 90%;
-}
-
-.max-w-\[85\%\] {
-  max-width: 85%;
 }
 
 .-translate-x-1\/2 {
@@ -1433,6 +1405,16 @@ footer a.active {
   border-bottom-right-radius: 9999px;
 }
 
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1551,6 +1533,19 @@ footer a.active {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500\/50 {
+  background-color: rgb(100 116 139 / 0.5);
+}
+
+.bg-black\/10 {
+  background-color: rgb(0 0 0 / 0.1);
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1620,6 +1615,11 @@ footer a.active {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-10 {
@@ -2149,10 +2149,6 @@ footer a.active {
 
   .md\:mt-80 {
     margin-top: 20rem;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:flex {
