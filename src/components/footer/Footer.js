@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className='relative bg-sky-600 lg:pt-0 pt-32 pb-0 text-white xl:mt-[670px] lg:mt-[450px] md:mt-80 mt-64 drop-shadow-[8px_-14px_6px_#0003]'>
             {/* ------------------> footer head <------------------ */}
-            <svg viewBox="0.976 161.014 503.253 148.046" className='absolute left-0 top-0 -translate-y-full stroke-sky-700 fill-sky-600 w-[100.5%] lg:block hidden'>
+            <svg viewBox="0.976 161.014 503.253 148.046" className='absolute left-0 top-0 translate-y-[-99.7%] stroke-sky-700 fill-sky-600 w-[100.5%] lg:block hidden'>
                 <path style={{
                     strokeLinecap: "round",
                 }}
