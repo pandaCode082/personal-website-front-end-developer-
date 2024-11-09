@@ -73,7 +73,7 @@
     }
 
     .blogs-category {
-        @apply py-2 px-6 rounded-full border border-sky-700 text-sky-700 capitalize hover:bg-black/20 text-sm;
+        @apply py-2 px-6 rounded-full border border-sky-700 text-sky-700 bg-transparent backdrop-blur capitalize hover:bg-black/20 text-sm;
     }
 
     .blogs-category.active {
