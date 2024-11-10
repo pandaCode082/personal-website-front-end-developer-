@@ -736,7 +736,6 @@ body {
 }
 
 .submit-btn {
-  height: -webkit-max-content;
   height: max-content;
   width: 75%;
   cursor: pointer;
@@ -817,7 +816,6 @@ footer a.active {
 
 @media (min-width: 768px) {
   .footer-list {
-    width: -webkit-max-content;
     width: max-content;
   }
 }
@@ -848,7 +846,6 @@ footer a.active {
 
 .category {
   display: flex;
-  height: -webkit-max-content;
   height: max-content;
   width: 24rem;
   flex-direction: column;
@@ -946,10 +943,6 @@ footer a.active {
   visibility: hidden;
 }
 
-.static {
-  position: static;
-}
-
 .fixed {
   position: fixed;
 }
@@ -963,7 +956,6 @@ footer a.active {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -1046,13 +1038,12 @@ footer a.active {
   margin-bottom: 1.25rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .mb-14 {
   margin-bottom: 3.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-3 {
@@ -1113,10 +1104,6 @@ footer a.active {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .line-clamp-1 {
@@ -1228,7 +1215,6 @@ footer a.active {
 }
 
 .h-max {
-  height: -webkit-max-content;
   height: max-content;
 }
 
@@ -1317,12 +1303,10 @@ footer a.active {
 }
 
 .w-max {
-  width: -webkit-max-content;
   width: max-content;
 }
 
 .w-min {
-  width: -webkit-min-content;
   width: min-content;
 }
 
@@ -1335,7 +1319,6 @@ footer a.active {
 }
 
 .max-w-max {
-  max-width: -webkit-max-content;
   max-width: max-content;
 }
 
@@ -1850,14 +1833,6 @@ footer a.active {
   padding-top: 1.5rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2236,7 +2211,6 @@ footer a.active {
 }
 
 .\[\&\>label\]\:user-input-box>label>input:not(.\[\&\>label\]\:user-input-box>label>input[type="checkbox"]) {
-  height: -webkit-max-content;
   height: max-content;
   width: 100%;
   border-radius: 9999px;
@@ -2304,7 +2278,6 @@ footer a.active {
   }
 
   .sm\:w-max {
-    width: -webkit-max-content;
     width: max-content;
   }
 
@@ -2702,7 +2675,6 @@ footer a.active {
   }
 
   .\32xl\:w-max {
-    width: -webkit-max-content;
     width: max-content;
   }
 
