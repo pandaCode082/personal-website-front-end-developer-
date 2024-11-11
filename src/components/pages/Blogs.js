@@ -96,7 +96,9 @@ export default function Blogs() {
 
                     {/* right side */}
                     < div className={`flex flex-col gap-10 xl:w-[650px] sm:w-80 w-72 h-max xl:bg-slate-300/20 bg-slate-300 backdrop-blur xl:rounded-lg rounded-l-lg mt-32 shadow-lg shadow-black/20 p-7 xl:sticky fixed top-10 xl:left-0 xl:right-0 transition-all duration-500 ease-in z-50 ${ShowRightBar ? "right-0" : "sm:-right-80 -right-72"}`}>
+
                         <div onClick={() => { setShowRightBar((prev) => !prev) }}
+                        
                             className='xl:hidden grid place-content-center text-white absolute top-1/2 left-[1px] -translate-x-10 w-10 h-16 -translate-y-1/2 bg-slate-300 backdrop-blur rounded-l-lg after:radius-effect-after before:radius-effect-beore cursor-pointer' >
                             <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-sky-400 opacity-75 -top-2 -left-1.5"></span>
                             <span class="absolute inline-flex h-4 w-4 rounded-full bg-sky-400 opacity-75 -top-2 -left-1.5"></span>
