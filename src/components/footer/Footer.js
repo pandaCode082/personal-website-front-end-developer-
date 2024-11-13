@@ -11,7 +11,7 @@ export default function Footer() {
                 }}
                     d="M 0.873 309.62 C -34.322 288.42 -17.854 167.715 1.287 161.243 C 20.428 154.771 53.028 211.927 152.038 196.907 C 206.761 188.605 256.343 261.019 280.224 256.501 C 301.337 252.507 339.746 237.191 381.36 234.64 C 418.504 232.363 439.218 268.737 500.09 225.857 C 517.896 213.314 506.844 288.338 501.064 312.706"></path>
             </svg >
-
+            {/* ------------- profile ------------- */}
             <a title='GitHub:pandaCode082' href='https://github.com/pandaCode082' target='
             _blank' className='xl:w-96 sm:w-60 w-40 aspect-[1/1] rounded-full bg-sky-600 lg:border-sky-700 border-white border-4 lg:absolute mx-auto lg:m-0 2xl:top-[-570px] xl:top-[-500px] -top-96 2xl:left-96 left-80 grid place-content-center overflow-hidden'>
                 <img src="https://avatars.githubusercontent.com/u/170001683?v=4" alt="git-profile" className='object-cover' />
@@ -20,27 +20,43 @@ export default function Footer() {
             <div className='container lg:text-left text-center lg:-translate-y-24 lg:mt-0 mt-10'>
 
                 <div className='flex lg:justify-between items-center flex-col lg:flex-row gap-20 lg:gap-0 '>
-                    {/* left side */}
+                    {/* ---------- left side ---------- */}
                     <div className='w-max text-lg font-medium lg:space-y-10 space-y-14'>
 
                         <h2 className='lg:text-6xl sm:text-5xl text-2xl font-bold capitalize drop-shadow-xl shadow-black/70'>mahdi roohandeh</h2>
-                        {/* footer list */}
+                        {/* ---------- footer list ---------- */}
                         <div className='sm:w-max w-9/12 justify-center capitalize flex flex-wrap sm:gap-5 gap-2 mx-auto sm:text-base text-sm'>
                             <NavLink to={"/"}>home</NavLink>
-                            <NavLink to={"/courses"}>courses</NavLink>
-                            <NavLink to={"/contact"}>contact</NavLink>
+                            <NavLink to={"/blogs"}>blogs</NavLink>
                             <NavLink to={"/about/"}>about</NavLink>
+                            <NavLink to={"/contact"}>contact</NavLink>
                             <NavLink to={"/login"}>login</NavLink>
                         </div>
                     </div>
-
+                    {/* ---------- footer links ---------- */}
                     <div className='[&>div]:flex [&>div]:flex-col text-center flex gap-16 flex-wrap'>
                         <div className='footer-list'>
                             <h5>Social media</h5>
-                            <span>telegram</span>
-                            <span>instagram</span>
-                            <span>linkedin</span>
-                            <span>github</span>
+                            <span>
+                                <a href="tg://resolve?domain=panda_0020">
+                                    telegram
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/panda_code__?igsh=MWpmYzBibWM3NWI3cA==">
+                                    instagram
+                                </a>
+                            </span>
+                            <span>
+                                <a href="/">
+                                    linkedin
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://github.com/pandaCode082">
+                                    github
+                                </a>
+                            </span>
                         </div>
 
                         <div className='footer-list'>
@@ -54,6 +70,9 @@ export default function Footer() {
                     </div>
 
                 </div>
+
+                {/* ---------- footer icons (end) ---------- */}
+
                 <div className='w-9/12 flex justify-center flex-wrap gap-10 mx-auto mt-24 sm:http://localhost:3000/about/information:w-20 [&>svg]:w-14 [&>svg]:fill-white/50'>
 
                     <svg className='md:order-none order-2' viewBox="0 0 384 512">

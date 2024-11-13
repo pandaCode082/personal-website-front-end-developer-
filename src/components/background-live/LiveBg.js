@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function LiveBg() {
-    const [elemCount] = useState(3);
+    const [elemCount] = useState(6);
 
     function createBgElems(count) {
         let elements = [];
