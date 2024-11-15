@@ -2,6 +2,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About/About';
 import Contact from './components/pages/Contact';
 import Blogs from './components/pages/Blogs';
+import Blog from './components/pages/Blog'
 import Cart from './components/pages/Cart';
 import Login from './components/pages/Login';
 import SignUp from './components/pages/SignUp';
@@ -28,6 +29,7 @@ const routes = [
     { path: '/contact', element: < Contact /> },
     { path: '/cart', element: < Cart /> },
     { path: '/Blogs', element: < Blogs /> },
+    { path: 'Blogs/blog/:blogID', element: <Blog /> },
     { path: '/Login', element: < Login /> },
     { path: '/signUp', element: < SignUp /> },
     {

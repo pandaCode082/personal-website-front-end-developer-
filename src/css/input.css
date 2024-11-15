@@ -189,4 +189,8 @@
         @apply bg-transparent w-1/2 aspect-[1/1] bottom-0 translate-y-full right-0 rounded-tr-[100%] block absolute;
         box-shadow: 5.5px -5.5px 0 5px #cbd5e1;
     }
+
+    .btn{
+        @apply py-1 px-2 rounded-md capitalize hover:shadow-md shadow-black/70;
+    }
 }

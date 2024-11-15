@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footer from "./../footer/Footer"
+import { Link } from 'react-router-dom';
 export default function Blogs() {
     const [ShowRightBar, setShowRightBar] = useState(false)
 
@@ -36,7 +37,7 @@ export default function Blogs() {
                         <div className='flex justify-center gap-9 flex-wrap h-max container'>
 
 
-                            <a href='/blogs' className='category'>
+                            <Link to={'/Blogs/blog/1'} className='category'>
                                 <div>
                                     <img src="./images/jungle.png" alt="category img" />
                                 </div>
@@ -45,9 +46,9 @@ export default function Blogs() {
                                     <h3>The way to learn programming</h3>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam optio deserunt non ipsum repellat, dolor ullam molestias et soluta!</p>
-                            </a>
+                            </Link>
 
-                            <a href='/blogs' className='category'>
+                            <Link to={'/Blogs/blog/2'} className='category'>
                                 <div>
                                     <img src="./images/gifs/blogs-header.gif" alt="category img" />
                                 </div>
@@ -56,9 +57,9 @@ export default function Blogs() {
                                     <h3>How to become a programmer</h3>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam optio deserunt non ipsum repellat, dolor ullam molestias et soluta!</p>
-                            </a>
+                            </Link>
 
-                            <a href='/blogs' className='category'>
+                            <Link to={'/Blogs/blog/3'} className='category'>
                                 <div>
                                     <img src="./images/image.png" alt="category img" />
                                 </div>
@@ -67,9 +68,9 @@ export default function Blogs() {
                                     <h3>Who is the front end specialist?</h3>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam optio deserunt non ipsum repellat, dolor ullam molestias et soluta!</p>
-                            </a>
+                            </Link>
 
-                            <a href='/blogs' className='category'>
+                            <Link to={'/Blogs/blog/4'} className='category'>
                                 <div>
                                     <img src="./images/thiet-ke-website.jpg" alt="category img" />
                                 </div>
@@ -78,8 +79,9 @@ export default function Blogs() {
                                     <h3>How to have a website for your personal business?</h3>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam optio deserunt non ipsum repellat, dolor ullam molestias et soluta!</p>
-                            </a>
-                            <a href='/blogs' className='category'>
+                            </Link>
+
+                            <Link to={'/Blogs/blog/5'} className='category'>
                                 <div>
                                     <img src="./images/28.jpg" alt="category img" />
                                 </div>
@@ -88,9 +90,7 @@ export default function Blogs() {
                                     <h3>How having a website helps your business</h3>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam optio deserunt non ipsum repellat, dolor ullam molestias et soluta!</p>
-                            </a>
-
-
+                            </Link>
                         </div >
                     </div >
 
@@ -98,7 +98,7 @@ export default function Blogs() {
                     < div className={`flex flex-col gap-10 xl:w-[650px] sm:w-80 w-72 h-max xl:bg-slate-300/20 bg-slate-300 backdrop-blur xl:rounded-lg rounded-l-lg mt-32 shadow-lg shadow-black/20 p-7 xl:sticky fixed top-10 xl:left-0 xl:right-0 transition-all duration-500 ease-in z-50 ${ShowRightBar ? "right-0" : "sm:-right-80 -right-72"}`}>
 
                         <div onClick={() => { setShowRightBar((prev) => !prev) }}
-                        
+
                             className='xl:hidden grid place-content-center text-white absolute top-1/2 left-[1px] -translate-x-10 w-10 h-16 -translate-y-1/2 bg-slate-300 backdrop-blur rounded-l-lg after:radius-effect-after before:radius-effect-beore cursor-pointer' >
                             <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-sky-400 opacity-75 -top-2 -left-1.5"></span>
                             <span class="absolute inline-flex h-4 w-4 rounded-full bg-sky-400 opacity-75 -top-2 -left-1.5"></span>
@@ -110,7 +110,7 @@ export default function Blogs() {
 
                         <h3 className='text-xl capitalize pb-3 border-b font-medium text-slate-600'>Latest blogs</h3>
 
-                        <a href='/blogs' className='laste-category'>
+                        <Link to={'/Blogs/blog/1'} className='laste-category'>
                             <div>
                                 <img src="./images/28.jpg" alt="category img" />
                             </div>
@@ -118,9 +118,9 @@ export default function Blogs() {
                                 <span>mahdi roohandeh</span>
                                 <h3>How having a website helps your business</h3>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href='/blogs' className='laste-category'>
+                        <Link to={'/Blogs/blog/2'} className='laste-category'>
                             <div>
                                 <img src="./images/gifs/blogs-header.gif" alt="category img" />
                             </div>
@@ -128,9 +128,9 @@ export default function Blogs() {
                                 <span>mahdi roohandeh</span>
                                 <h3>How to become a programmer</h3>
                             </div>
-                        </a>
+                        </Link>
 
-                        <a href='/blogs' className='laste-category'>
+                        <Link to={'/Blogs/blog/3'} className='laste-category'>
                             <div>
                                 <img src="./images/image.png" alt="category img" />
                             </div>
@@ -138,7 +138,7 @@ export default function Blogs() {
                                 <span>mahdi roohandeh</span>
                                 <h3>Who is the front end specialist?</h3>
                             </div>
-                        </a>
+                        </Link>
 
                     </div >
                 </div >
