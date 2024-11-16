@@ -1496,6 +1496,10 @@ footer a.active {
   width: min-content;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -2934,6 +2938,18 @@ footer a.active {
     width: 100%;
   }
 
+  .lg\:w-60 {
+    width: 15rem;
+  }
+
+  .lg\:w-8 {
+    width: 2rem;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
+  }
+
   .lg\:min-w-96 {
     min-width: 24rem;
   }
@@ -3205,6 +3221,10 @@ footer a.active {
 
   .\32xl\:w-max {
     width: max-content;
+  }
+
+  .\32xl\:w-96 {
+    width: 24rem;
   }
 
   .\32xl\:py-2 {

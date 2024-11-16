@@ -13,7 +13,7 @@ export default function Footer() {
             </svg >
             {/* ------------- profile ------------- */}
             <a title='GitHub:pandaCode082' href='https://github.com/pandaCode082' target='
-            _blank' className='xl:w-96 sm:w-60 w-40 aspect-[1/1] rounded-full bg-sky-600 lg:border-sky-700 border-white border-4 lg:absolute mx-auto lg:m-0 2xl:top-[-570px] xl:top-[-500px] -top-96 2xl:left-96 left-80 grid place-content-center overflow-hidden'>
+            _blank' className='2xl:w-96 lg:w-80 sm:w-60 w-40 aspect-[1/1] rounded-full bg-sky-600 lg:border-sky-700 border-white border-4 lg:absolute mx-auto lg:m-0 2xl:top-[-570px] xl:top-[-500px] -top-96 2xl:left-96 left-80 grid place-content-center overflow-hidden'>
                 <img src="https://avatars.githubusercontent.com/u/170001683?v=4" alt="git-profile" className='object-cover' />
             </a>
             {/* ------------------> footer body <------------------ */}
