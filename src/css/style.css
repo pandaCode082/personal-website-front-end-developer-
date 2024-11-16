@@ -2930,6 +2930,10 @@ footer a.active {
     width: 24rem;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:min-w-96 {
     min-width: 24rem;
   }
@@ -3007,6 +3011,10 @@ footer a.active {
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
   .xl\:sticky {
     position: sticky;
   }
@@ -3083,6 +3091,10 @@ footer a.active {
     width: 100%;
   }
 
+  .xl\:w-6\/12 {
+    width: 50%;
+  }
+
   .xl\:max-w-\[calc\(50\%-160px\)\] {
     max-width: calc(50% - 160px);
   }
@@ -3094,6 +3106,10 @@ footer a.active {
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
   }
 
   .xl\:items-end {

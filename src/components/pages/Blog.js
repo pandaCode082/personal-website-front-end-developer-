@@ -175,9 +175,9 @@ export default function Blog() {
                         </main>
                     </section >
 
-                    <section className='container min-h-16 h-max mt-40 relative z-50 flex flex-col gap-10 lg:items-start items-center'>
+                    <section className='container min-h-16 h-max mt-40 relative z-50 flex flex-col gap-10 xl:items-start items-center'>
                         <h2 className='font-bold text-4xl drop-shadow-md'>Recently visited :</h2>
-                        <div className='lg:w-6/12 w-full aspect-[1/0.55] lg:absolute top-0 right-0 bg-black/20 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden'>
+                        <div className='xl:w-6/12 lg:w-9/12 w-full aspect-[1/0.55] xl:absolute top-0 right-0 bg-black/20 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden'>
                             <Swiper navigation={true} modules={[Navigation]} className="mySwiper w-full h-full">
 
                                 <SwiperSlide className='relative'>
